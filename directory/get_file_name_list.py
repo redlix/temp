@@ -6,7 +6,7 @@ path_name = "/Users/red/imooc/深度学习工程师(实战)(1)"
 
 
 def get_path():
-    p = Path("/Users/red/imooc/深度学习工程师(实战)(1)")
+    p = Path(path_name)
     print(p)
     pit = p.iterdir()
     print(pit)
@@ -27,7 +27,7 @@ def generate_tree(pathname, n=0):
 
 
 def get_list():
-    for root, dirs, files in os.walk("/Users/red/imooc/深度学习工程师(实战)(1)", topdown=False):
+    for root, dirs, files in os.walk(path_name, topdown=False):
         # for name in files:
         #     print(os.path.join(root, name))
         #     print("[{}]--file name: {}".format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), name))
